@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.*;
 
 // Los in deze klasse alle foutmeldingen op door (abstracte) klassen met variabelen en methodes te maken en een interface met methodes (en soms een import).
 public class PokemonGymImpl implements PokemonGym {
@@ -246,7 +246,6 @@ public class PokemonGymImpl implements PokemonGym {
     @Override
     public void attackOrChange(Pokemon pokemon, Pokemon gymPokemon, PokemonTrainer trainer, PokemonGymOwner gym){
         Scanner speler_A = new Scanner(System.in);
-
         System.out.println("Do you want to attack or change your pokemon?");
         System.out.println("Type a for attack or c for change");
         String choice = speler_A.nextLine();
